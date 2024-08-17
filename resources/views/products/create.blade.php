@@ -13,6 +13,10 @@
             <input type="number" class="form-control" id="price" name="price" required>
         </div>
         <div class="form-group">
+            <label for="image">Link Url Gambar:</label>
+            <input type="text" class="form-control" id="image" name="image" required>
+        </div>
+        <div class="form-group">
             <label for="stock">Stok:</label>
             <input type="number" class="form-control" id="stock" name="stock" required>
         </div>

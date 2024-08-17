@@ -18,7 +18,7 @@ class ProductController extends Controller
 
         $products = Product::where($order, 'like', '%'.$query.'%')
                         ->orderBy($order, $sort)
-                        ->paginate(5);
+                        ->paginate(9);
 
         return view('products.index', compact('products'));
     }
@@ -49,6 +49,7 @@ class ProductController extends Controller
             'price' => 'required|numeric',
             'stock' => 'required|integer',
             'description' => 'nullable|string',
+            'image' => 'nullable|string',
             'rating' => 'nullable|numeric|min:0|max:5',
         ]);
 
@@ -85,6 +86,7 @@ class ProductController extends Controller
             'price' => 'required|numeric',
             'stock' => 'required|integer',
             'description' => 'nullable|string',
+            'image' => 'nullable|string',
             'rating' => 'nullable|numeric|min:0|max:5',
         ]);
 
@@ -132,6 +134,7 @@ class ProductController extends Controller
             'price' => 'required|numeric',
             'stock' => 'required|integer',
             'description' => 'nullable|string',
+            'image' => 'nullable|string',
             'rating' => 'nullable|numeric|min:0|max:5',
         ]);
 
@@ -146,6 +149,7 @@ class ProductController extends Controller
             'price' => 'required|numeric',
             'stock' => 'required|integer',
             'description' => 'nullable|string',
+            'image' => 'nullable|string',
             'rating' => 'nullable|numeric|min:0|max:5',
         ]);
 
