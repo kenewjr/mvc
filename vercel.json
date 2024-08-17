@@ -23,11 +23,5 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
-    },
-    "builds": [
-        { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "public" } }
-    ],
-    "scripts": {
-        "build": "npm run dev"
     }
 }
